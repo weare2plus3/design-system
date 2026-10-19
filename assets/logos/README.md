@@ -15,3 +15,4 @@ Rules:
 - Minimum size: mark 20px tall on screen and 8mm in print; lockup 32px tall.
 - Don't place the logo on `signal` or `ochre` grounds. Use `paper` or the dark ground.
 - The lockup is fixed: don't re-space it or set the wordmark on one line.
+- On a separate product's or project's site, the logo sits in the footer as the maker's mark, never in the header. The header belongs to the product's own icon and name.

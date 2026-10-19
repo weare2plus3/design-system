@@ -160,10 +160,10 @@
     "Social"
   ],
   "lastChange": {
-    "at": "2026-10-17T13:55:00Z",
+    "at": "2026-10-19T19:12:00Z",
     "by": "Khush",
     "via": "Claude",
-    "note": "Added circle-safe social profile pictures (Social group)."
+    "note": "Logo placement: product and project sites lead with their own icon and name; the TWO+THREE logo goes in the footer."
   },
   "layout": "files",
   "libraries": [

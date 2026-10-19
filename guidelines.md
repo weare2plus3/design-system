@@ -57,6 +57,8 @@ TWO+THREE is a small creative studio that publishes books and builds software, a
 - The logo is the **TWO+THREE** lockup in the `Logos` group: a square mark with a white 2 and 3 stepping up and a solid `signal` + where they meet, beside the wordmark set in Teko on two lines (TWO+ / THREE) with its + also in `signal`. Use `two-plus-three-lockup.svg` on light grounds, `-reversed` on dark, and `-mono` wherever `signal` can't be printed. Use the mark alone where space is square or tiny. In code, use the Logo component.
 - The wordmark is Teko outlined into shapes. Always use the files or the component, never retype it in the live font.
 - The logo is the brand's one heavy, solid object, and its two +s are the brand's one fixed use of `signal`. Everything around it stays type and hairlines; that heavy-against-hairline contrast is the brand's signature.
+- Where the logo goes depends on whose page it is. On the studio's own sites (2plus3.studio and anything that speaks for TWO+THREE itself), the lockup leads in the header.
+- A separate product or project with its own name (an app, an extension, a book's site) leads with its own icon and name in the header. The TWO+THREE logo goes in the footer as the maker's mark, and never in the header too. Everything else on the page stays TWO+THREE: tokens, type, components and voice.
 
 ## Iconography
 

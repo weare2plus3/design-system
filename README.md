@@ -31,6 +31,7 @@ The brand and UI rules for everything TWO+THREE makes: the website, apps, books 
 - **Two typefaces.** Teko for headings, Instrument Sans for everything you read.
 - **One accent per view.** `signal`, a soft sage, is the logo's + and the one highlight on a page. `ochre` is for books, gifts and seasonal moments.
 - **Square and flat.** Square corners, hairline rules, no gradients. Shadows only for things that rise above the page.
+- **The logo leads only on the studio's own sites.** A separate product or project (an app, an extension, a book's site) leads with its own icon and name, and the TWO+THREE logo goes in its footer as the maker's mark, never in the header too.
 - **Both themes are first-class.** Every colour has a light and a dark value.
 
 The [guidelines](guidelines.md) have the detail.
