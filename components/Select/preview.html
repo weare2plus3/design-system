@@ -1,0 +1,15 @@
+<!-- @dsCard group="Forms" height=130 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Select preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tt-stack' },
+      h(T.Select, { label: 'Card size', placeholder: 'Choose a size', defaultValue: '', options: ['A6 (postcard)', 'A5', 'Square, 150mm', 'A4 (print)'] }))
+  );
+</script>
+</body>
+</html>

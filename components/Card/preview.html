@@ -1,0 +1,22 @@
+<!-- @dsCard group="Content" height=440 width=1040 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Card preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  function ph(label) {
+    return h('div', { style: { flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--ink-muted)' } }, label);
+  }
+  var cell = { flex: '1 1 200px', display: 'flex' };
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tt-row', style: { alignItems: 'stretch', gap: 'var(--space-8)', padding: 'var(--space-8)' } },
+      h('div', { style: cell }, h(T.Card, { media: ph('[BOOK COVER]'), eyebrow: 'Picture book', title: '[Book title]', footer: h(T.Button, { variant: 'quiet', href: '#' }, 'Get notified') }, 'Our first picture book, printed in a short run.')),
+      h('div', { style: cell }, h(T.Card, { elevation: 1, eyebrow: 'Elevation 1', title: 'Over a busy background' }, 'shadow-1: the lightest lift.')),
+      h('div', { style: cell }, h(T.Card, { href: '#', eyebrow: 'Elevation 0, hover 2', title: 'A linked card' }, 'Flat at rest; lifts to shadow-2 on hover.')),
+      h('div', { style: cell }, h(T.Card, { elevation: 3, eyebrow: 'Elevation 3', title: 'Menus and popovers' }, 'shadow-3, shown here for comparison.')))
+  );
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- @dsCard group="Forms" height=230 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TextArea preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tt-stack' },
+      h(T.TextArea, { label: 'Message inside the card', placeholder: 'Happy birthday, love from…', hint: 'Up to 200 characters.' }))
+  );
+</script>
+</body>
+</html>

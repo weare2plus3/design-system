@@ -1,0 +1,60 @@
+<!-- @dsCard height=296 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TWO+THREE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--paper); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:296px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:296px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:296px; }
+  .rule { fill:none; stroke:var(--line); stroke-width:1; }
+  .edge { fill:var(--paper-raised); stroke:var(--ink); stroke-width:1.5; }
+  .grid { fill:none; stroke:var(--ink-muted); stroke-width:1.5; }
+  .sage { fill:var(--signal); }
+  .ochre { fill:var(--ochre); }
+  .words { position:absolute; left:var(--space-8); bottom:var(--space-8); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:120px; line-height:.86; font-weight:600; letter-spacing:.005em; color:var(--ink); }
+  .name .plus { color:var(--signal); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:14px; line-height:20px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 296" width="480" height="296">
+<!--
+  blocks      outlined paper-raised plates in ink (160x248 bled off the top, 96x136, 208x168 bled off the right) carrying two solid accents: the logo's + in signal (64x64, arms space-4 thick) and one ochre square (32x32), about 5% of the cover
+  arrangement one tall slab with satellites, square corners (radius-none), bottoms on one line space-16 above the edge, space-4 gutters
+  pattern     the + of 2+3: a hairline plus grid in ink-muted at a space-8 pitch inside the right plate, with the one solid sage + on the slab as the highlight; four line rules behind
+  scales      sides in space-2 multiples; gutters space-4; pitch space-8; corners radius-none
+-->
+<line class="rule" x1="0" y1="64.5" x2="480" y2="64.5"/>
+<line class="rule" x1="0" y1="232.5" x2="480" y2="232.5"/>
+<line class="rule" x1="176.5" y1="0" x2="176.5" y2="296"/>
+<line class="rule" x1="288.5" y1="0" x2="288.5" y2="296"/>
+<rect class="edge" x="0.75" y="-16" width="160" height="248"/>
+<rect class="edge" x="176.75" y="96.75" width="96" height="135.5"/>
+<rect class="edge" x="288.75" y="64.75" width="220" height="167.5"/>
+<path class="sage" d="M48 136h64v16H48Z M72 112h16v64H72Z"/>
+<rect class="ochre" x="208" y="48" width="32" height="32"/>
+<g class="grid">
+  <path d="M312 104h16M320 96v16 M344 104h16M352 96v16 M376 104h16M384 96v16 M408 104h16M416 96v16 M440 104h16M448 96v16"/>
+  <path d="M312 136h16M320 128v16 M344 136h16M352 128v16 M376 136h16M384 128v16 M408 136h16M416 128v16 M440 136h16M448 128v16"/>
+  <path d="M312 168h16M320 160v16 M344 168h16M352 160v16 M376 168h16M384 160v16 M408 168h16M416 160v16 M440 168h16M448 160v16"/>
+  <path d="M312 200h16M320 192v16 M344 200h16M352 192v16 M376 200h16M384 192v16 M408 200h16M416 192v16 M440 200h16M448 192v16"/>
+</g>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">TWO<span class="plus">+</span><br>THREE</h1>
+  <p class="tag">software. culture. gifts. books. design.</p>
+</div>
+</div>
+</body>
+</html>

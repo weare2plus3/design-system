@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TWO+THREE design system</title>
+<meta name="description" content="The TWO+THREE design system: tokens, type, logos, favicons and components.">
+<meta property="og:title" content="TWO+THREE design system">
+<meta property="og:description" content="Tokens, type, logos, favicons and components.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://weare2plus3.github.io/design-system/">
+<meta property="og:image" content="https://weare2plus3.github.io/design-system/assets/social/avatar-1080.png">
+<!-- The `paper` token's light and dark values: meta tags can't read CSS variables. -->
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f2ea">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111110">
+<link rel="icon" href="assets/favicons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components/bundle.css">
+<link rel="stylesheet" href="site.css">
+<script>
+  // Apply a saved theme before first paint so the page doesn't flash.
+  try {
+    var t = localStorage.getItem("tt-theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app">
+  <noscript><p class="noscript">This page needs JavaScript to show the design system. The files are on <a href="https://github.com/weare2plus3/design-system">GitHub</a>.</p></noscript>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+<script src="components/bundle.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

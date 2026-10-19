@@ -1,0 +1,19 @@
+<!-- @dsCard group="Forms" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>RadioGroup preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tt-stack' },
+      h(T.RadioGroup, { legend: 'Paper finish', defaultValue: 'matte', options: [
+        { value: 'matte', label: 'Matte' },
+        { value: 'gloss', label: 'Gloss' },
+        { value: 'linen', label: 'Linen texture (out of stock)', disabled: true }
+      ] }))
+  );
+</script>
+</body>
+</html>

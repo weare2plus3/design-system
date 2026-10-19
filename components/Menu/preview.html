@@ -1,0 +1,19 @@
+<!-- @dsCard group="Overlays" height=290 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Menu preview</title></head>
+<body>
+<div id="root" style="padding: var(--space-6);"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Menu, { label: 'Share', defaultOpen: true, items: [
+      { label: 'Copy link', icon: 'external' },
+      { label: 'Email a friend', icon: 'mail' },
+      '-',
+      { label: 'Download PDF', icon: 'download' }
+    ] })
+  );
+</script>
+</body>
+</html>

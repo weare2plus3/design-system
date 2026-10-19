@@ -1,0 +1,18 @@
+<!-- @dsCard group="Brand" height=150 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Logo preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { className: 'tt-row', style: { gap: 'var(--space-8)', padding: 'var(--space-8)', alignItems: 'flex-end' } },
+      h(T.Logo, { height: 80 }),
+      h(T.Logo, { variant: 'mark', height: 48 }),
+      h(T.Logo, { variant: 'mark', height: 24 }),
+      h(T.Logo, { height: 48, mono: true, label: 'TWO+THREE, one colour' }))
+  );
+</script>
+</body>
+</html>

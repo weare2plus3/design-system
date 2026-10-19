@@ -1,0 +1,182 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "two-plus-three-lockup.svg",
+        "two-plus-three-lockup-reversed.svg",
+        "two-plus-three-lockup-mono.svg",
+        "two-plus-three-mark.svg",
+        "two-plus-three-mark-reversed.svg",
+        "two-plus-three-mark-mono.svg",
+        "two-plus-three-wordmark.svg",
+        "two-plus-three-wordmark-reversed.svg"
+      ],
+      "files": {
+        "two-plus-three-lockup.svg": {
+          "name": "two-plus-three-lockup.svg",
+          "blob": "73e2839102dce0e7d699ea96dda9b8e2",
+          "size": 3813,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-lockup-reversed.svg": {
+          "name": "two-plus-three-lockup-reversed.svg",
+          "blob": "54d074c906701b187cd33d4f49a00817",
+          "size": 3813,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-lockup-mono.svg": {
+          "name": "two-plus-three-lockup-mono.svg",
+          "blob": "c55b2d41417a412dcbf8c4675507cf26",
+          "size": 3835,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-mark.svg": {
+          "name": "two-plus-three-mark.svg",
+          "blob": "2a25be1c70c75c3c60507a61d82358f8",
+          "size": 443,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-mark-reversed.svg": {
+          "name": "two-plus-three-mark-reversed.svg",
+          "blob": "69a71c1aaea3a093e1399a8dd272f184",
+          "size": 443,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-mark-mono.svg": {
+          "name": "two-plus-three-mark-mono.svg",
+          "blob": "fddcceb632aa1cde95610a7e4e710040",
+          "size": 485,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-wordmark.svg": {
+          "name": "two-plus-three-wordmark.svg",
+          "blob": "b5fef8fd680cafd2116787c8f2110d6d",
+          "size": 3448,
+          "type": "image/svg+xml"
+        },
+        "two-plus-three-wordmark-reversed.svg": {
+          "name": "two-plus-three-wordmark-reversed.svg",
+          "blob": "5652c5b5f428a530f537b4761f9b4f74",
+          "size": 3448,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Favicons": {
+      "name": "Favicons",
+      "tile": "s",
+      "order": [
+        "favicon.svg",
+        "favicon-32.png",
+        "favicon-16.png",
+        "apple-touch-icon.png",
+        "icon-512.png"
+      ],
+      "files": {
+        "favicon.svg": {
+          "name": "favicon.svg",
+          "blob": "0bfc69e26860cd3ad56e3960986661fd",
+          "size": 607,
+          "type": "image/svg+xml"
+        },
+        "favicon-32.png": {
+          "name": "favicon-32.png",
+          "blob": "2ddbadf401b81b2f4a95de37e0ffbd93",
+          "size": 189,
+          "type": "image/png"
+        },
+        "favicon-16.png": {
+          "name": "favicon-16.png",
+          "blob": "d458bbce19771bbde0dea647112ae63a",
+          "size": 181,
+          "type": "image/png"
+        },
+        "apple-touch-icon.png": {
+          "name": "apple-touch-icon.png",
+          "blob": "4c8a3c242908619a6bc0527f254965da",
+          "size": 1180,
+          "type": "image/png"
+        },
+        "icon-512.png": {
+          "name": "icon-512.png",
+          "blob": "ea7cf18b8485dce712f98ca5056ef671",
+          "size": 2586,
+          "type": "image/png"
+        }
+      }
+    },
+    "Social": {
+      "name": "Social",
+      "tile": "m",
+      "order": [
+        "avatar-1080.png",
+        "avatar.svg",
+        "avatar-light-1080.png",
+        "avatar-light.svg"
+      ],
+      "files": {
+        "avatar-1080.png": {
+          "name": "avatar-1080.png",
+          "blob": "beaa2c6a95469d5b11ddac8b1c9c5b35",
+          "size": 6297,
+          "type": "image/png"
+        },
+        "avatar.svg": {
+          "name": "avatar.svg",
+          "blob": "747ea53efad580eb6fc988fd93cda620",
+          "size": 538,
+          "type": "image/svg+xml"
+        },
+        "avatar-light-1080.png": {
+          "name": "avatar-light-1080.png",
+          "blob": "09c23030c9e115533a994bdf543ae4d9",
+          "size": 6293,
+          "type": "image/png"
+        },
+        "avatar-light.svg": {
+          "name": "avatar-light.svg",
+          "blob": "d0459a2eab7d7427ce0a7b6bdb366f99",
+          "size": 538,
+          "type": "image/svg+xml"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-12T07:40:00Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Favicons",
+    "Social"
+  ],
+  "lastChange": {
+    "at": "2026-10-17T13:55:00Z",
+    "by": "Khush",
+    "via": "Claude",
+    "note": "Added circle-safe social profile pictures (Social group)."
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "TwoPlusThree",
+  "sections": {},
+  "title": "TWO+THREE"
+}

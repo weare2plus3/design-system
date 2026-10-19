@@ -1,0 +1,45 @@
+{
+  "name": "@weare2plus3/design-system",
+  "version": "1.0.0",
+  "description": "The TWO+THREE design system: tokens, type, logos, favicons and components.",
+  "private": true,
+  "homepage": "https://weare2plus3.github.io/design-system/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weare2plus3/design-system.git"
+  },
+  "files": [
+    "tokens.css",
+    "tokens.json",
+    "tailwind-preset.js",
+    "guidelines.md",
+    "components",
+    "react",
+    "assets"
+  ],
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./tokens.json": "./tokens.json",
+    "./tailwind-preset": "./tailwind-preset.js",
+    "./tailwind-preset.js": "./tailwind-preset.js",
+    "./react": {
+      "types": "./react/index.d.ts",
+      "import": "./react/index.mjs"
+    },
+    "./components/*": "./components/*",
+    "./assets/*": "./assets/*",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build:site": "sh scripts/build-site.sh",
+    "preview": "sh scripts/build-site.sh && python3 -m http.server 8000 --directory _site"
+  }
+}

@@ -1,0 +1,14 @@
+<!-- @dsCard group="Overlays" height=110 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Toast preview</title></head>
+<body>
+<div id="root" style="padding: var(--space-6);"></div>
+<script>
+  var T = window.TwoPlusThree, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(T.Toast, { inline: true, action: { label: 'View basket', href: '#' }, onClose: function () {} }, 'Added to your basket.')
+  );
+</script>
+</body>
+</html>
