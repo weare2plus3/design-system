@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "The TWO+THREE design system: tokens, type, logos, favicons and components.",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://weare2plus3.github.io/design-system/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weare2plus3/design-system.git"
   },
   "files": [
+    "LICENSE",
     "tokens.css",
     "tokens.json",
     "tailwind-preset.js",

@@ -13,6 +13,7 @@
   var h = React.createElement;
   var T = window.TwoPlusThree;
   var REPO = "https://github.com/weare2plus3/design-system";
+  var LICENSE = REPO + "/blob/main/LICENSE";
   var PACKAGE = "@weare2plus3/design-system";
   // Component groups in the order the guidelines list them.
   var GROUP_ORDER = ["Actions", "Brand", "Forms", "Content", "Overlays", "Navigation"];
@@ -357,10 +358,10 @@
       });
     }
     return h("div", { className: "code-block" },
-      props.title ? h("p", { className: "label eyebrow" }, props.title) : null,
-      h("div", { className: "code-wrap" },
-        h("pre", null, h("code", null, props.code)),
-        h("button", { type: "button", className: "copy", onClick: copy }, st[0] ? "Copied" : "Copy")));
+      h("div", { className: "code-head" },
+        h("p", { className: "label eyebrow" }, props.title || ""),
+        h("button", { type: "button", className: "copy", onClick: copy }, st[0] ? "Copied" : "Copy")),
+      h("pre", null, h("code", null, props.code)));
   }
 
   function Use(props) {
@@ -369,8 +370,9 @@
     return h("section", { id: "use", className: "section", "aria-labelledby": "use-title" },
       h("div", { className: "section-head" },
         h("p", { className: "numeral section-num" }, String(props.n).padStart(2, "0")),
-        h("h2", { id: "use-title", className: "display section-title" }, "use it")),
+        h("h2", { id: "use-title", className: "display section-title" }, "use it in our projects")),
       h("div", { className: "prose" },
+        h("p", null, "For TWO+THREE projects and the people working on them. It isn't licensed for use anywhere else."),
         h("p", null, "Install a tagged version straight from GitHub. Tags only move when the design system is re-exported, so a project changes only when you bump the version.")),
       h("div", { className: "specimen use-grid" },
         h(Subhead, null, "In a JavaScript project"),
@@ -419,7 +421,10 @@
         h("p", { className: "tagline" }, "software. culture. gifts. books. design."),
         h("div", { className: "actions" },
           h(T.Button, { variant: "secondary", href: REPO, iconAfter: "external" }, "View on GitHub"),
-          h(T.Button, { variant: "quiet", href: "#use" }, "Use it in a project"))),
+          h(T.Button, { variant: "quiet", href: "#use" }, "Use it in our projects")),
+        h("p", { className: "notice" },
+          "Public so you can see how we work. It's for TWO+THREE projects only, and all rights are reserved. ",
+          h("a", { href: LICENSE }, "Read the licence"), ".")),
       h("div", { className: "hero-art" }, h(CoverArt)));
   }
 
@@ -436,12 +441,15 @@
 
   function Footer(props) {
     return h("footer", { className: "footer" },
-      h(T.Logo, { variant: "mark", height: 32, label: "" }),
-      h("p", null, "TWO+THREE design system" + (props.pkg.version ? ", version " + props.pkg.version : "") + "."),
-      h("p", null,
-        h("a", { href: REPO }, "GitHub"), " · ",
-        h("a", { href: "https://2plus3.studio" }, "2plus3.studio")),
-      h("p", { className: "legal" }, "© " + new Date().getFullYear() + " TWO PLUS THREE LIMITED"));
+      h("div", { className: "footer-row" },
+        h(T.Logo, { variant: "mark", height: 32, label: "" }),
+        h("p", null, "TWO+THREE design system" + (props.pkg.version ? ", version " + props.pkg.version : "") + "."),
+        h("p", null,
+          h("a", { href: REPO }, "GitHub"), " · ",
+          h("a", { href: LICENSE }, "Licence"), " · ",
+          h("a", { href: "https://2plus3.studio" }, "2plus3.studio"))),
+      h("p", { className: "legal" },
+        "© 2026 TWO PLUS THREE LIMITED. All rights reserved. The TWO+THREE name, logo and design system are for TWO+THREE projects only; using them anywhere else needs our written permission."));
   }
 
   /* ---------- Theme ---------- */

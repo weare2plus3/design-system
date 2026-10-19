@@ -17,6 +17,11 @@
 - Bump `version` in `package.json` (patch for wording, minor for new tokens, components or assets, major for anything renamed or removed), update the tag in the `README.md` install snippets, commit, tag `vX.Y.Z` and push the tag. The site reads the version from `package.json` by itself.
 - Projects install a tag (`github:weare2plus3/design-system#vX.Y.Z`), so they only change when their tag is bumped. The website (`weare2plus3/website`) is one of them.
 
+## Public, but not for anyone else's use
+
+- The repo and site are public so people can see how TWO+THREE works, but all rights are reserved (`LICENSE`): the design system is for TWO+THREE projects and the people working on them only. Keep that position in the README (intro and Licence section), the site's hero notice and footer, and `package.json` (`"license": "SEE LICENSE IN LICENSE"`). Don't add an open-source licence or write copy that invites outside use.
+- Everything here is public: never commit secrets, personal contact details, client names or unannounced work.
+
 ## The GitHub Pages site
 
 - `site/` is the page; `scripts/build-site.sh` copies it into `_site/` with the files it reads, and `.github/workflows/pages.yml` deploys `_site/` on every push to `main`. Preview locally with `npm run preview`.

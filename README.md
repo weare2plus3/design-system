@@ -9,9 +9,11 @@
 
 The brand and UI rules for everything TWO+THREE makes: the website, apps, books and packaging. Colour, type, space, the logo, icons and components, in light and dark.
 
-**[See the design system](https://weare2plus3.github.io/design-system/)** · [Read the guidelines](guidelines.md) · [Use it](#use-it)
+**[See the design system](https://weare2plus3.github.io/design-system/)** · [Read the guidelines](guidelines.md) · [Use it in our projects](#use-it-in-our-projects)
 
 > software. culture. gifts. books. design.
+
+It's public so you can see how we work. It's for TWO+THREE projects only, and all rights are reserved: see the [licence](#licence).
 
 ## What's inside
 
@@ -36,9 +38,9 @@ The brand and UI rules for everything TWO+THREE makes: the website, apps, books 
 
 The [guidelines](guidelines.md) have the detail.
 
-## Use it
+## Use it in our projects
 
-Install a tagged version straight from GitHub. A project only changes when you bump the tag.
+For TWO+THREE projects and the people working on them. Install a tagged version straight from GitHub. A project only changes when you bump the tag.
 
 ### In a JavaScript project
 
@@ -86,3 +88,9 @@ The design system is kept on claude.ai, and this repo is its code copy. Make cha
 3. Bump the tag in the projects that use it.
 
 The [site](https://weare2plus3.github.io/design-system/) rebuilds from `main` on every push. It reads the guidelines, tokens and component files directly, so it never needs editing for new content. To preview it locally, run `npm run preview` and open http://localhost:8000.
+
+## Licence
+
+Copyright © 2026 TWO PLUS THREE LIMITED. All rights reserved.
+
+The design system is public so you can see it, not so you can use it. The TWO+THREE name, logo, guidelines, tokens, components and assets are for TWO+THREE's own projects and the people working on them. Using them anywhere else needs our written permission. The full terms are in [LICENSE](LICENSE).

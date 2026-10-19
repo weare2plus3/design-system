@@ -1,0 +1,25 @@
+Copyright (c) 2026 TWO PLUS THREE LIMITED. All rights reserved.
+
+This repository contains the TWO+THREE design system: the TWO+THREE name and
+logo, the brand guidelines, design tokens, components, icons, code and every
+other file in it (together, "the Materials").
+
+The Materials are published so that people can see how TWO+THREE designs and
+builds things. They are not licensed for anyone else to use. Except as set out
+below, you may not copy, modify, publish, distribute or otherwise use the
+Materials, in whole or in part, without written permission from
+TWO PLUS THREE LIMITED.
+
+TWO PLUS THREE LIMITED, and the people and companies it engages to work on
+TWO+THREE products, books and sites, may use the Materials for that work only.
+
+TWO+THREE, 2plus3, 2+3 and the TWO+THREE logo identify TWO PLUS THREE LIMITED
+and its work. Nothing in this repository grants any right to use them.
+
+Viewing this repository, and forking it on GitHub as GitHub's Terms of Service
+allow, does not grant a licence to use the Materials.
+
+Third-party software and fonts that the Materials load, such as React, Teko
+and Instrument Sans, are not part of the Materials and keep their own licences.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
